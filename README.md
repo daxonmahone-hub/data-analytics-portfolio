@@ -71,4 +71,4 @@ jupyter notebook analysis.ipynb
 Each project folder works the same way. `setup_data.py` downloads the data from its original public source (the healthcare project uses a pinned snapshot stored in the repo, so its numbers always match).
 
 ## Contact
-[LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN) · daxonmahone@gmail.com
+[LinkedIn](https://www.linkedin.com/in/dmahone) · daxonmahone@gmail.com
