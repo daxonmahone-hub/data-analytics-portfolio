@@ -26,7 +26,8 @@ Multi-table JOINs (encounters → providers → organizations), `LEAD()` for rea
 
 ## Files
 - [`analysis.ipynb`](analysis.ipynb): every query, its output, charts, and written findings
-- `setup_data.py`: downloads the source data and builds `data/healthcare.duckdb`
+- [`practice.ipynb`](practice.ipynb): 6 hands-on SQL challenges plus an open-ended question, with an answer checker [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daxonmahone-hub/data-analytics-portfolio/blob/main/01-healthcare-claims-analysis/practice.ipynb)
+- `setup_data.py`: builds `data/healthcare.duckdb` from the pinned snapshot in `data_snapshot/` (so results match exactly)
 
 ## Run it
 ```bash
@@ -35,4 +36,3 @@ python setup_data.py
 jupyter notebook analysis.ipynb
 ```
 
-*Synthea regenerates its public sample periodically, so re-running setup may produce slightly different numbers.*

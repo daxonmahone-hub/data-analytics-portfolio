@@ -40,6 +40,17 @@ Sized the PC game market and examined what separates games that reach 1M+ player
 
 ---
 
+## Hands-on practice
+Each project also has a `practice.ipynb` with 6 SQL challenges that aren't answered in this repo, plus one open-ended question. They go from warm-up queries to window functions and multi-table capstones. A built-in checker confirms answers using hashes only, so it never reveals the solution. They run in the browser with no setup:
+
+| Project | Practice notebook |
+|---|---|
+| E-commerce operations | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daxonmahone-hub/data-analytics-portfolio/blob/main/02-ecommerce-operations-analysis/practice.ipynb) |
+| Healthcare claims | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daxonmahone-hub/data-analytics-portfolio/blob/main/01-healthcare-claims-analysis/practice.ipynb) |
+| Steam gaming market | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daxonmahone-hub/data-analytics-portfolio/blob/main/03-steam-gaming-market-analysis/practice.ipynb) |
+
+---
+
 ## Run it yourself
 ```bash
 pip install -r requirements.txt
@@ -47,7 +58,7 @@ cd 02-ecommerce-operations-analysis
 python setup_data.py          # downloads the data and builds a local DuckDB database
 jupyter notebook analysis.ipynb
 ```
-Each project folder works the same way. The raw data isn't stored in the repo; `setup_data.py` downloads it from the original public source.
+Each project folder works the same way. `setup_data.py` downloads the data from its original public source (the healthcare project uses a pinned snapshot stored in the repo, so its numbers always match).
 
 ## Contact
 [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN) · daxonmahone@gmail.com

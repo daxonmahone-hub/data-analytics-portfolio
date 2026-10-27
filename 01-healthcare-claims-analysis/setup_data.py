@@ -15,15 +15,21 @@ URL = "https://synthetichealth.github.io/synthea-sample-data/downloads/latest/sy
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW_DIR = os.path.join(HERE, "data", "synthea_csv")
 DB_PATH = os.path.join(HERE, "data", "healthcare.duckdb")
+SNAPSHOT = os.path.join(HERE, "data_snapshot", "synthea_sample_csv.zip")  # pinned copy used for the analysis
 
 
 def download():
-    """Fetch and unzip the Synthea CSVs if they aren't already here."""
+    """Unzip the pinned Synthea snapshot (or download the latest) if CSVs aren't already here."""
     if glob.glob(os.path.join(RAW_DIR, "*.csv")):
         print("CSVs already downloaded, skipping.")
         return
-    print("Downloading Synthea sample (~6 MB)...")
-    data = urllib.request.urlopen(URL).read()
+    if os.path.exists(SNAPSHOT):
+        print("Using the pinned data snapshot in data_snapshot/ (same data as the analysis).")
+        with open(SNAPSHOT, "rb") as f:
+            data = f.read()
+    else:
+        print("Downloading Synthea sample (~6 MB)...")
+        data = urllib.request.urlopen(URL).read()
     os.makedirs(RAW_DIR, exist_ok=True)
     with zipfile.ZipFile(io.BytesIO(data)) as z:
         for name in z.namelist():

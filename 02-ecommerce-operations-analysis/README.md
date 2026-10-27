@@ -27,6 +27,7 @@ This analysis treats the business like a set of operational KPIs (on-time delive
 
 ## Files
 - [`analysis.ipynb`](analysis.ipynb): every query, its output, charts, and written findings
+- [`practice.ipynb`](practice.ipynb): 6 hands-on SQL challenges plus an open-ended question, with an answer checker [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daxonmahone-hub/data-analytics-portfolio/blob/main/02-ecommerce-operations-analysis/practice.ipynb)
 - `setup_data.py`: downloads the source data and builds `data/ecommerce.duckdb`
 
 ## Run it
