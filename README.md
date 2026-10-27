@@ -8,6 +8,16 @@ Finance & Data Science student at UNC Charlotte. This repo contains SQL + Python
 
 ## Projects
 
+### ⭐ Featured: [Is Rare Whiskey Actually a Good Investment?](04-whiskey-investment-analysis/)
+*Finance · auction market analysis · 1.35M real sales*
+
+I compared rare whiskey auction prices against the S&P 500 by tracking the same bottles year over year.
+- Rare whisky grew **~3.4% a year vs. 11.7% for the S&P 500** (2013–2025)
+- Prices boomed in 2016–17 and 2020–21, then fell every year from 2022 to 2024
+- 30+ year bottles sell for ~1.7x bottles under 12 years
+
+<img src="04-whiskey-investment-analysis/images/whisky_vs_sp500.png" width="560">
+
 ### 1. [E-commerce Operations & Delivery Performance](02-ecommerce-operations-analysis/)
 *Business operations · KPI / SLA tracking · ~100K real orders, 8 tables*
 
